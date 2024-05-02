@@ -3,14 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Snake-Game</title>
     <!--ACHTUNG - DAS GEHT NUR WEGEN VITE! IN "ECHT" KANN KEIN TS IM BROWSER AUSGEFÜHRT WERDEN -->
     <script defer type="module" src="/src/index.ts"></script>
-  </head>
-
-  <body>
-    <img class="small-image" src="/jslogo.png" alt="JavaScript Logo" />
-    <label for="myInput">Type something:</label>
-    <input name="myInput" type="text" id="myInput" />
-  </body>
+    <title>Snake Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <script src="snake.js"></script>
+</body>
 </html>
