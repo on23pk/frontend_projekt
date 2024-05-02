@@ -32,12 +32,12 @@ class Snake {
         };
 
         // Stellen sicher, dass das Essen nicht auf der Schlange erscheint
-        // for (const segment of this.body) {
-        //     if (segment.x === this.food.x && segment.y === this.food.y) {
-        //         this.generateFood();
-        //         break;
-        //     }
-        // }
+        for (const segment of this.body) {
+            if (segment.x === this.food.x && segment.y === this.food.y) {
+                this.generateFood();
+                break;
+            }
+        }
     }
 
     move() {
